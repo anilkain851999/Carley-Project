@@ -145,7 +145,7 @@ section#why_choose_us {
 .section-title .title {
   margin-top: 5px;
   margin-bottom: 0;
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 900;
   line-height: 1.4;
   font-family: 'Urbanist', sans-serif;
@@ -210,66 +210,30 @@ section#Provide_trustseal .owl-carousel.owl-theme {
 /********** Accordian css Start **************/
 section#why_choose_us .row {
   display: flex;
-  align-items: center;
 }
-
-.accordion .item .item-name {
+section#why_choose_us .card_importers {
+  height: 100%;
+}
+section#why_choose_us h3.title {
+  margin-bottom: 40px;
+}
+section#why_choose_us .card_importers p {
+  color: rgb(35, 31, 64);
+  font-size: 20px;
+  font-family: Urbanist, sans-serif;
+}
+section#why_choose_us h4.cars_title {
   color: #525fe1;
-  font-weight: 600;
   font-size: 22px;
-  border-top: 2px solid #525fe170;
-  font-family: 'Urbanist', sans-serif;
-  width: 100%;
-  text-align: left;
-  padding: 15px 30px;
-  border: 0;
 }
-.desc li {
-  color: #231F40;;
-  font-weight: 400;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+section#why_choose_us .card_importers:hover {
+  background: linear-gradient(rgb(14 8 2) 0%, rgb(58 11 163) 100%);
+  transition: all 0.6s ease 0s;
+  cursor: pointer;
 }
-*:focus {
-  outline: medium none !important;
+section#why_choose_us .card_importers:hover p{
+  color: #ffffff;
 }
-
-
-.accordion {
-  background: #FFF;
-  border: 1px solid #CCC;
-}
-
-
-.accordion .item {
-  position: relative;
-  overflow: hidden;
-}
-
-
-
-.accordion .item .desc {
-  margin: 0px;
-  opacity: 0;
-  max-height: 0px;
-  padding: 5px 10px;
-  font-size: 15px;
-  border-bottom: 1px solid #E6E6E6;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.accordion .item .item-name:hover ~ .desc, .accordion .item .desc:hover {
-  opacity: 1;
-  max-height: 500px;
-  transition: all 1s ease-in-out 0s;
-}
-.accordion .item:hover > .item-name {
-  border-bottom: transparent;
-}
-.accordion .item:last-child > .item-name, .accordion .item:last-child > .desc {
-  border-bottom: transparent;
-}
-
 /* ************section#Why_importers_should *****************/
 
 section#Why_importers_should {
@@ -383,4 +347,15 @@ form#cta_form button.btn.btn-primary {
   font-weight: 700;
   padding: 12px 29px 12px 29px;
   border-radius: 5px 5px 5px 5px;
+}
+
+section#call_to_action:before {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border: 40px solid rgb(227 35 35 / 11%);
+  border-radius: 50%;
+  left: -129px;
+  top: -149px;
 }
