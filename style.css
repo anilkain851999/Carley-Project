@@ -475,7 +475,7 @@ form#cta_form button.btn.btn-primary {
   padding: 15px 18px 15px 18px;
 }
 header#siteheader .navbar-collapse{
-  width: 250px !important;
-  left: -250px !important;
+  width: 250px;
+  left: -250px;
 }
 }
