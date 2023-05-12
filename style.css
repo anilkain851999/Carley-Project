@@ -359,3 +359,71 @@ section#call_to_action:before {
   left: -129px;
   top: -149px;
 }
+
+
+@media only screen and (max-width: 1024px){
+  .hero_content h1 {
+    font-size: 42px;
+}
+}
+@media only screen and (max-width: 768px){
+  .hero_img img {
+    width: 500px;
+  }
+  section#Hero_banner {
+    height: 100%;
+    padding: 0 0 50px 0;
+}
+  section#Hero_banner .row {
+    flex-direction: column-reverse;
+    text-align: center;
+}
+section#Provide_trustseal:before {
+  height: 250px;
+  width: 250px;
+  left: -129px;
+  top: -121px;
+}
+footer#sitefooter .row {
+  display: inherit;
+}
+button.navbar-toggler i.fa.fa-bars {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 300;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+header#siteheader .navbar-collapse{
+  display: block;
+  width: 400px;
+  background-color:  #525fe1;
+  position: fixed;
+  left: -400px;
+  top: 0px;
+  bottom: 0;
+  transition: ease-in-out 0.8s;
+  height: 100%;
+  z-index:10; }	
+  header#siteheader .navbar-collapse.collapse.show{left: 0px;}
+
+ul.navbar-nav li.nav-item {
+  text-align: left;
+  padding: 36px 15px 3px 51px;
+}
+header#siteheader ul.navbar-nav li.nav-item a {
+  color: #fff;
+  font-size: 27px;
+  font-family: 'Lato', sans-serif;
+}
+}
+
+@media only screen and (max-width: 600px){
+.hero_img img {
+  width: 300px;
+}
+}
