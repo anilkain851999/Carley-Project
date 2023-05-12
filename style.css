@@ -400,10 +400,10 @@ button.navbar-toggler i.fa.fa-bars {
 
 header#siteheader .navbar-collapse{
   display: block;
-  width: 400px;
+  width: 350px;
   background-color:  #525fe1;
   position: fixed;
-  left: -400px;
+  left: -350px;
   top: 0px;
   bottom: 0;
   transition: ease-in-out 0.8s;
@@ -425,5 +425,53 @@ header#siteheader ul.navbar-nav li.nav-item a {
 @media only screen and (max-width: 600px){
 .hero_img img {
   width: 300px;
+}
+a.navbar-brand img {
+  width: 36px;
+}
+button.navbar-toggler i.fa.fa-bars {
+  font-size: 28px;
+}
+header#siteheader ul.navbar-nav li.nav-item a {
+  font-size: 22px;
+}
+.hero_content h1 {
+  font-size: 35px;
+  line-height: 45px;
+  margin-top: 32px;
+}
+h2.two_Color.text-center {
+  font-size: 24px;
+}
+section#Value_propostion h2:before {
+  height: 100%;
+  left: 8%;
+  top: -86%;
+}
+.client_logo img {
+  width: 200px !important;
+  margin: 0 auto;
+}
+h2:after {
+  left: 39%;
+}
+section#Provide_trustseal .owl-carousel.owl-theme {
+  padding: 31px 0px 9px;
+}
+section#Popular_Products {
+  padding: 60px 0;
+}
+.section-title .title {
+  font-size: 32px;
+}
+h4.cars_title {
+  font-size: 22px;
+}
+h3.title.text-center {
+  font-size: 28px;
+}
+form#cta_form button.btn.btn-primary {
+  font-size: 13px;
+  padding: 15px 18px 15px 18px;
 }
 }
