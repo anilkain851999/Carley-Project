@@ -33,6 +33,41 @@ header#siteheader ul.navbar-nav li.nav-item a {
 header#siteheader ul.navbar-nav li.nav-item {
     margin: 0 22px;
 }
+ul.dropdown-menu.show {
+  background: #0c0f7a;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #1e2125;
+  background-color: transparent;
+}
+li.multiple_memu ul.submenu_hover {
+display:none;
+transition:0.6s;
+}
+li.multiple_memu:hover ul.submenu_hover {
+  position: absolute;
+  right: -131px;
+  top: 4px;
+  list-style: none;
+  background: #0c0f7a;
+  padding: 26px 40px;
+  display: block;
+  transition:0.6s;
+}
+li.multiple_memu2 ul.submenu_hover {
+  display:none;
+  transition:0.6s;
+  }
+  li.multiple_memu2:hover ul.submenu_hover {
+    position: absolute;
+    right: -131px;
+    top: 4px;
+    list-style: none;
+    background: #0c0f7a;
+    padding: 26px 40px;
+    display: block;
+    transition:0.6s;
+  }
 
 
 /* Hero Banner  */
