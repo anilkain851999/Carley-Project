@@ -23,12 +23,12 @@ a.navbar-brand img {
     width: 60px;
 }
 header#siteheader .bg-light {
-    background-color: #0c0f7a!important;
+    background-color: transparent !important;
 }
 header#siteheader ul.navbar-nav li.nav-item a {
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
+  color: #525fe1;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 header#siteheader ul.navbar-nav li.nav-item {
     margin: 0 22px;
@@ -446,29 +446,8 @@ section#call_to_action:before {
   left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
-.left-4::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  right: 30px;
-  border: medium solid rgba(37, 117, 252, 1);
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent rgba(37, 117, 252, 1);
-}
 
-/* Add arrows to the right container (pointing left) */
-.right-4::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  left: 30px;
-  border: medium solid rgb(87, 98, 245);
-  border-width: 10px 10px 10px 0;
-  border-color: transparent rgb(70, 94, 226) transparent transparent;
-}
+
 
 /* Fix the circle for containers on the right side */
 .right-4::after {
@@ -508,39 +487,26 @@ section#call_to_action:before {
   }
 }
 
-.gradient-custom {
-  /* fallback for old browsers */
-  background: #6a11cb;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(
-    to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
-  );
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient( to right, rgb(82 95 225), rgb(80 95 226) );
+.timeline-4 .card-body img {
+  width: 64px;
+  margin-bottom: 20px;
 }
 
-.gradient-custom-4 {
-  /* fallback for old browsers */
-  background: #f093fb;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
-  );
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient( to right, rgb(82 95 225), rgb(80 95 226) );
+section#why_choose_us .main-timeline-4 .card.gradient-custom {
+  background: transparent !important;
+  border: none;
 }
-
-
-
-
+section#why_choose_us .main-timeline-4 .card-body h4 {
+  color: #525fe1;
+  font-size: 30px;
+}
+section#why_choose_us .main-timeline-4 .card-body p{
+  color:#000;
+}
+.timeline-4.right-4 .card.gradient-custom-4 {
+  background: transparent !important;
+  border: none;
+}
 
 
 
