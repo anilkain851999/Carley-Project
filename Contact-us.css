@@ -394,5 +394,23 @@ h3 {
     border-radius: 12px;
 }
 
-/* contact us page css end
 
+
+@media only screen and (max-width: 768px){
+.contact_list_section .contact_list_inner {
+    display: inherit;
+}
+.contact_list_section .contact_list_inner .c_list_card {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.contact_form_section .contact_inner .contact_form {
+    padding: 50px 20px;
+}
+}
+
+@media only screen and (max-width: 768px){
+.bread_crumb .bred_text h1 {
+    font-size: 36px;
+}
+}
