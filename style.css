@@ -538,6 +538,12 @@ section#call_to_action:before {
   background: linear-gradient( to right, rgb(82 95 225), rgb(80 95 226) );
 }
 
+
+
+
+
+
+
 @media only screen and (max-width: 1024px){
   .hero_content h1 {
     font-size: 42px;
