@@ -62,14 +62,14 @@ button:focus,
 
 /* section heading h2 */
 
-.section_title h2 {
+section.contact_form_section .section_title h1 {
     font-size: 40px;
     font-weight: 700;
     color: Blue;
     margin-bottom: 10px;
 }
 
-.section_title h2 span {
+section.contact_form_section .section_title h1 span {
     color: #391E6C;
 }
 
@@ -189,12 +189,13 @@ h3 {
 }
 
 .contact_list_section .contact_list_inner .c_list_card {
-    width: 365px;
+    width: 350px;
     background-color: #fff;
     border-radius: 12px;
     padding: 40px;
     text-align: center;
     transition: 0.4s all;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .contact_list_section .contact_list_inner .c_list_card .inner_text {
@@ -302,7 +303,9 @@ h3 {
     position: relative;
 }
 
-.contact_form_section .contact_inner .section_title h2 {}
+section#contact_us {
+    margin-bottom: 40px;
+}
 
 .contact_form_section .contact_inner .contact_form {
     position: relative;
@@ -336,7 +339,10 @@ h3 {
     font-weight: 500;
     background: #ffffff;
 }
-
+a.hover_action:hover {
+    color: #00f;
+    text-decoration: none;
+}
 .contact_form_section .contact_inner .contact_form form .form-group .form-control:focus {
     box-shadow: none;
     border-color: var(--main_purple);
@@ -378,24 +384,26 @@ h3 {
     right: 0;
     bottom: 0;
 }
-
-.map_section {
-    position: relative;
-    width: 100%;
+.submit_button button.btn {
+    background: #525fe1;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 14px 58px;
+    border-radius: 40px;
 }
-
-.map_section .map_inner {
-    width: 100%;
-    border-radius: 12px;
+section#contact_us_content {
+    padding-top: 100px;
+    padding-bottom: 40px;;
 }
-
-.map_section .map_inner iframe {
-    width: 100%;
-    border-radius: 12px;
+section#contact_us_content h5 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #625d5d;
 }
-
-
-
+input#mobile_code {
+    padding: 27px;
+}
 @media only screen and (max-width: 768px){
 .contact_list_section .contact_list_inner {
     display: inherit;

@@ -37,7 +37,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
    <title>Carely Export</title>
 </head>
 
@@ -46,7 +46,7 @@
    <header id="siteheader">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="">Carely Export</a>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                aria-label="Toggle navigation">
@@ -177,31 +177,77 @@
                   nutrient-rich fertilizer.Our vermicompost is carefully crafted to ensure maximum nutrient retention
                   and plant uptake, providing your crops with the essential elements they need to thrive.</p>
             </div>
-            <div class="col-md-12">
-               <div class="owl-carousel owl-theme owl-featured">
-                  <div class="item">
-                     <div class="products_card">
-                        <img src="img/coffee-beans.jpg" alt="">
-                        <p class="text-center">coffee beans</p>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="owl-carousel owl-loaded owl-drag" id="featured">
+                     <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-4560px, 0px, 0px); transition: all 0s ease 0s; width: 9120px;">
+                           <div class="owl-item cloned" style="width: 1110px; margin-right: 30px;">
+                              <div class="item">
+                                 <div class="work-wrap d-flex">
+                                    <div class="img " style="background-image: url(img/istockphoto-153737841-170667a.jpg);"></div>
+                                    <div class="text text-left  p-4 px-xl-5 d-flex align-items-center">
+                                       <div class="py-md-5">
+                                          <h2 class="mb-4">Rice</h2>
+                                          <div class="row">
+                                             <div class="col-xl-8">
+                                                <p>Experience the finest quality rice with Carely Export. Our carefully selected rice varieties are sourced from trusted suppliers, ensuring exceptional taste, texture, and aroma. Whether you're looking for Basmati rice, Jasmine rice, or other popular varieties, we offer a range of options to suit your culinary preferences. Discover the perfect rice for your meals and elevate your dining experience with Carely Export.
+                                                </p>
+                                             </div>
+                                          </div>
+                                          <p>
+                                             <button type="button" class="btn btn-dark mb-2 py-3 px-4">Learn More</button>
+                                          </p>
+                                       </div>
+                                    </div>
+                                   
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="owl-item cloned" style="width: 1110px; margin-right: 30px;">
+                              <div class="item">
+                                 <div class="work-wrap d-md-flex">
+                                    <div class="img" style="background-image: url(img/Vermicompost_Factory_-_panoramio__3_1100x.jpg);"></div>
+                                    <div class="text text-left text-lg-right p-4 px-xl-5 d-flex align-items-center">
+                                       <div class="py-md-5">
+                                          <h2 class="mb-4">Vermicompost</h2>
+                                          <div class="row">
+                                             <div class="col-xl-8">
+                                                <p>Nourish your plants and promote healthy growth with our premium vermicompost. Our vermicompost is produced through a natural and sustainable process using earthworms to break down organic matter. Packed with essential nutrients, beneficial microorganisms, and improved soil structure, our vermicompost is a powerful organic fertilizer that will enhance the vitality of your plants. Choose Carely Export for high-quality vermicompost that will enrich your garden and yield impressive results.</p>
+                                             </div>
+                                          </div>
+                                          <p>
+                                             <button type="button" class="btn btn-dark mb-2 py-3 px-4">Learn More</button>
+                                          </p>
+                                       </div>
+                                    </div>
+                                   
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                  </div>
-                  <div class="item">
-                     <div class="products_card">
-                        <img src="img/Onion.jpg" alt="">
-                        <p class="text-center">Onion</p>
+                     <div class="owl-nav">
+                        <button type="button" role="presentation" class="owl-prev">
+                           <p><small>Prev</small><span class="ion-ios-arrow-round-back"></span></p>
+                        </button>
+                        <button type="button" role="presentation" class="owl-next">
+                           <p><small>Next</small><span class="ion-ios-arrow-round-forward"></span></p>
+                        </button>
                      </div>
-                  </div>
-                  <div class="item">
-                     <div class="products_card">
-                        <img src="img/varicompost.png" alt="">
-                        <p class="text-center">Vermicompost</p>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <div class="products_card">
-                        <img src="img/Rice.jpg" alt="">
-                        <p class="text-center">Rice</p>
-                     </div>
+
+                     <div class="owl-dots">
+                        <button role="button" class="owl-dot">
+                           <span></span>
+                        </button>
+                        <button role="button" class="owl-dot">
+                           <span></span>
+                        </button><button role="button" class="owl-dot active">
+                           <span></span>
+                        </button><button role="button" class="owl-dot">
+                              <span></span>
+                        </button></div>
                   </div>
                </div>
             </div>
@@ -218,77 +264,7 @@
                </div>
             </div>
          </div>
-         <!-- <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-12 mb-pixle">
-               <div class="card_importers">
-                  <h4 class="cars_title">
-                     Product Quality
-                  </h4>
-                  <p>At Carely Export, we guarantee high-quality products that meet international standards and are
-                     thoroughly inspected before shipment to ensure they meet mporters' specifications and requirements.
-                  </p>
-               </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 mb-pixle">
-               <div class="card_importers">
-                  <h4 class="cars_title">
-                     Competing Pricing
-                  </h4>
-                  <p>At Carely Export, we provide competitive and transparent pricing on our products, with flexible
-                     options based on customer needs, to offer the best value for money for our importers.</p>
-               </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 mb-pixle">
-               <div class="card_importers">
-                  <h4 class="cars_title">
-                     Timely Delivery/Reliable Shipping
-                  </h4>
-                  <p>At Carely Export, we have a strong logistics network that ensures reliable and timely delivery with
-                     regular updates and proactive issue resolution, meeting our clients' deadlines and handling all
-                     export documentation for a smooth shipping process.
-                  </p>
-               </div>
-            </div>
-
-         </div>
-         <div class="row">
-            <div class="shaps">
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 mb-pixle">
-               <div class="card_importers">
-                  <h4 class="cars_title">
-                     Customer Service
-                  </h4>
-                  <p>At Carely Export, we prioritize exceptional customer service by offering personalized solutions,
-                     working closely with clients to understand their unique needs, and providing expert support and
-                     responsiveness to ensure their satisfaction and success in the global marketplace</p>
-               </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 mb-pixle">
-               <div class="card_importers">
-                  <h4 class="cars_title">
-                     Growing Portfolio of Products
-                  </h4>
-                  <p>The Indian government's favorable policies, such as tax incentives, export promotion zones, and
-                     free trade agreements, have created a business-friendly environment that encourages foreign
-                     investment and boosts exports. This means that importers can enjoy quality products at a
-                     competitive price, while also benefiting from the country's technical expertise and skilled
-                     workforce.
-                  </p>
-               </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 mb-pixle">
-               <div class="card_importers">
-                  <h4 class="cars_title">
-                     Hassle-Free Imports with Carely Export
-                  </h4>
-                  <p>Carely Export offers a comprehensive solution to handle all aspects of the import process, allowing
-                     importers to focus on their core business while we take care of sourcing, quality control, customs
-                     clearance, and logistics.</p>
-               </div>
-            </div>
-         </div>
-          -->
+         
 
            <!-- ------------------------------------ 
             TIMELINE codE 
@@ -379,7 +355,26 @@
 
 
   
+<section id="call_to_act">
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+         <div class="content_cta">
+            <p class="text-center">
+               Looking to import products with ease and confidence? Look no further than Carely Export! Our comprehensive import services, including sourcing, quality control, customs clearance, and logistics, make importing simple and stress-free. With our expertise in international trade and commitment to customer satisfaction, you can trust us to handle all aspects of your imports with professionalism and efficiency.
+            </p>
 
+            <h5 class="text-center">"Join us now and import with confidence - experience seamless logistics, get the best value, and start hassle-free importing with Carely Export!"</h5>
+
+            <div class="button_cta_pro d-flex align-items-center justify-content-center">
+               <a href="#">Get Quote Now</a>
+               <a href="#">View More Products</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</section>
 
 
    <section id="Why_importers_should">
@@ -470,29 +465,6 @@
    <section id="call_to_action">
       <div class="container">
          <div class="row">
-            <div class="col-md-12">
-               <div class="contact_data">
-                  <div class="section-title text-center">
-                     <span class="pre-title ">SUBSCRIBE NEWSLETTER</span>
-                     <h3 class="title text-center">Get Every Latest News</h3>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="com-xl-3 col-lg-3 col-md-12"></div>
-               <div class="com-xl-6 col-lg-6 col-md-12">
-                  <div class="form_cta">
-                     <form id="cta_form">
-                        <div class="mb-3">
-                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                              placeholder="Email">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                     </form>
-                  </div>
-               </div>
-               <div class="com-xl-3 col-lg-3 col-md-12"></div>
-            </div>
          </div>
       </div>
    </section>
@@ -636,37 +608,7 @@
    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script>
-   $('.owl-carousel').owlCarousel({
-      loop: true,
-      autoplay: true,
-      margin: 10,
-      nav: false,
-      dots: false,
-      responsive: {
-         0: {
-            items: 1
-         },
-         600: {
-            items: 3
-         },
-         1000: {
-            items: 5
-         }
-      }
-   });
-   $(document).ready(function(){
-  $(window).scroll(function(){
-  	if($(this).scrollTop() >20)
-  	{
-  		$('.siteheader').addClass('fixed'); 		
-  	}
-  	 else{
-  	 	$('.siteheader').removeClass('fixed');
-  	 }
-  });
-});
-
-</script>   
+<script src="custom.js"></script>
+ 
 </body>
 </html>

@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
 a{
     text-decoration: none;
 }
@@ -19,9 +16,6 @@ img{
 
 /* header Css  */
 
-a.navbar-brand img {
-    width: 60px;
-}
 header#siteheader .bg-light {
     background-color: transparent !important;
 }
@@ -29,6 +23,7 @@ header#siteheader {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 999;
 }
 header#siteheader ul.navbar-nav li.nav-item a {
   color: #525fe1;
@@ -75,7 +70,19 @@ li.multiple_memu2 ul.submenu_hover {
   }
 
 
-/* Hero Banner  */
+/* On scroll fix header */
+header#siteheader.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  transition: 0.8s ease-in-out;
+  background: #ffead9;
+}
+
+
+
+/* Home Page Hero*/
 section#Hero_banner {
   height: 700px;
   background: url("/img/home-one-testimonial-2.jpg");
@@ -116,7 +123,9 @@ section#Hero_banner .row {
   display: inline-block;
 }
 
-/* value propostion section css  */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+value propostion section css Start
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 section#Value_propostion {
   padding: 100px 0;
 }
@@ -233,19 +242,54 @@ section#Provide_trustseal .owl-carousel.owl-theme {
 
 
 /* **********Products slider  ***************/
+.work-wrap .img {
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.work-wrap .text, .work-wrap .img {
+  width: 50%;
+}
+#Popular_Products .text.text-left{
+  background: #f5f0f7;
+}
+#Popular_Products .owl-carousel .owl-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+}
+#Popular_Products .owl-carousel .owl-nav .owl-prev {
+  left: 50%;
+  margin-left: -35px;
+  position: absolute;
+}
+#Popular_Products .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 50%;
+  margin-right: -35px;
+}
+#Popular_Products .owl-carousel .owl-nav .owl-prev p span, .owl-carousel .owl-nav .owl-prev p small, .owl-carousel .owl-nav .owl-next p span, .owl-carousel .owl-nav .owl-next p small {
+  display: block;
+  color: #000;
+  line-height: .8;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#Popular_Products .owl-carousel .owl-nav .owl-prev span:before, .owl-carousel .owl-nav .owl-next span:before {
+  font-size: 40px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.work-wrap .text h2 {
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
 
-.products_card {
-  border: 3px solid #fcf6f8;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.products_card p {
-  color: #231F40;
-  font-weight: 600;
-  font-size: 22px;
-  border-top: 2px solid #525fe170;
-  padding-top: 10px;
-  font-family: 'Urbanist', sans-serif;
-}
 
 /********** Accordian css Start **************/
 section#why_choose_us .row {
@@ -337,57 +381,9 @@ section#call_to_action {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 80px 0;
   position: relative;
-}
-section#call_to_action span.pre-title{
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 26px;
-  color: #525fe1;
-  display: inline-block;
-  margin-bottom: 0;
-  letter-spacing: .1em;
-  font-family: 'Urbanist', sans-serif;
-}
-h3.title.text-center {
-  margin-top: 5px;
-  margin-bottom: 0;
-  font-size: 40px;
-  font-weight: 900;
-  color: #231F40;
-  font-family: 'Lato', sans-serif;
-}
-.form_cta input#exampleInputEmail1 {
-  background: #fff;
-  height: 64px;
-  background-color: #FFFFFF;
-  padding: 13px 12px 13px 52px;
-  border-radius: 5px 5px 5px 5px;
-  border-style: solid;
-  border-width: 0px 0px 0px 0px;
-  border: 2px solid #525fe182;
-  margin-top: 30px;
-}
-input#exampleInputEmail1 {
-  color: #525fe1;
-  font-weight: 500;
-  font-size: 22px;
-  font-family: 'Urbanist', sans-serif;
 }
 
-form#cta_form {
-  position: relative;
-}
-form#cta_form button.btn.btn-primary {
-  position: absolute;
-  top: 6px;
-  right: 8px;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 12px 29px 12px 29px;
-  border-radius: 5px 5px 5px 5px;
-}
 
 section#call_to_action:before {
   content: "";
@@ -459,6 +455,190 @@ section#call_to_action:before {
   left: -14px;
 }
 
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+           Home Page css End 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+
+/* -------------------------------------
+               ABOUT US PAGE
+ --------------------------------------*/
+ section#about_hero {
+  background: url(img/home-one-testimonial-2.jpg);
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+  position: relative;
+}
+section#Welcome_about {
+  padding: 100px 0;
+}
+section#about_hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #525fe1;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 52px;
+}
+section#Welcome_about p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: roboto;
+  line-height: 1.67;
+  color: #6F6B80;
+}
+section#Welcome_about h2:before{
+  content: "";
+  position: absolute;
+  background: url(img/shape-02-2.png);
+  width: 200px;
+  height: 100%;
+  left: 27%;
+  top: -44%;
+  background-repeat: no-repeat;
+}
+section#About_misson {
+  background: url(img/home-one-testimonial-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  position: relative;
+}
+section#About_misson .row {
+  display: flex;
+}
+section#About_misson h3 {
+  color: #525fe1;
+  font-size: 34px;
+}
+section#About_misson p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: roboto;
+  line-height: 1.67;
+  color: #6F6B80;
+}
+section#About_misson img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+section#About_misson ul.value_li li {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: roboto;
+  line-height: 1.67;
+  color: #6F6B80;
+}
+section#About_misson ul.value_li li {
+  list-style: disc;
+}
+.card_misson {
+  background: #ffffff;
+  height: 100%;
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  border-radius: 30px;
+}
+ul.value_li {
+  padding-left: 21px;
+}
+section#What_Do {
+  padding-bottom: 70px;
+}
+section#Who_are {
+padding: 100px 0;
+}
+section#Who_are p{
+font-size: 20px;
+  font-weight: 400;
+  font-family: roboto;
+  line-height: 1.67;
+  color: #6F6B80;
+}
+section#What_Do p{
+  font-size: 20px;
+    font-weight: 400;
+    font-family: roboto;
+    line-height: 1.67;
+    color: #6F6B80;
+  }
+  .value {
+    background: #ffffff;
+    height: 100%;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.value ul li {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: roboto;
+  line-height: 1.67;
+  color: #6F6B80;
+}
+ /* -------------------------------------
+               ABOUT US PAGE
+ --------------------------------------*/
+
+ section#products_img {
+  background: url(img/Vermicomposting.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  padding: 100px 0;
+}
+.title_products {
+  text-align: center;
+}
+section#products_img h1 {
+  color: #fff;
+  font-size: 60px;
+  margin-top: 29px;
+  font-weight: 700;
+}
+section#products_details {
+  background: #92a0bb;
+}
+ /* -------------------------------------
+              Single Prodcust page css
+ --------------------------------------*/
+
+ section.products_img {
+  background: url(img/);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  padding: 100px 0;
+}
+section#products_details {
+background: url("/img/home-one-testimonial-2.jpg");
+background-position: center;
+background-size: cover;
+padding: 100px 0;
+}
+section#products_details h3 {
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.4;
+  font-family: 'Urbanist', sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+}
+section#products_details p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: roboto;
+  line-height: 1.67;
+  color: #6F6B80;
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
@@ -512,8 +692,41 @@ section#why_choose_us .main-timeline-4 .card-body p{
   background: transparent !important;
   border: none;
 }
-
-
+ /* ---------------Call to action ------------ */
+ section#call_to_act{
+  padding: 100px 0 ;
+ }
+ section#call_to_act .container {
+  background: linear-gradient(0deg, rgb(55 15 94 / 95%), rgb(18 17 98 / 61%)), url(img/Cta.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 90px;
+  border-radius: 20px;
+  background-attachment: fixed;
+}
+ section#call_to_act p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+}
+section#call_to_act h5{
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+}
+section#call_to_act .button_cta_pro a {
+  background: #525fe1;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 14px 40px;
+  margin: 33px 0 0px 30px;
+  border-radius: 8px;
+}
 
 @media only screen and (max-width: 1024px){
   .hero_content h1 {
@@ -580,9 +793,7 @@ header#siteheader ul.navbar-nav li.nav-item a {
 .hero_img img {
   width: 300px;
 }
-a.navbar-brand img {
-  width: 36px;
-}
+
 button.navbar-toggler i.fa.fa-bars {
   font-size: 28px;
 }
@@ -631,5 +842,18 @@ form#cta_form button.btn.btn-primary {
 header#siteheader .navbar-collapse{
   width: 250px;
   left: -250px;
+}
+section#call_to_act .container {
+  padding: 20px;
+  border-radius: 20px;
+}
+section#call_to_act .container .button_cta_pro.d-flex {
+  text-align: center;
+  margin-top: 59px;
+  display: block !important;
+}
+section#call_to_act .button_cta_pro a {
+  margin-top: 30px;
+  display: block;
 }
 }
