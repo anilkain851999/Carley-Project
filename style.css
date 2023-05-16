@@ -447,19 +447,13 @@ section#call_to_action:before {
   left: 50%;
 }
 
-
-
-
 /* Fix the circle for containers on the right side */
 .right-4::after {
   left: -14px;
 }
-
-
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
            Home Page css End 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
 
 
 /* -------------------------------------
